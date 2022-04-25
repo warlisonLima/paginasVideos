@@ -23,12 +23,15 @@ a{
 }
 img{
     text-align: center;
+    
 }
 h1{
     text-align: center;
+    font-size: 16pt;
 }
 p{
     text-indent: 50px;
+    font-size: 1.2em;
 }
 p#voltar{
     text-indent: 50%;
@@ -40,9 +43,7 @@ ul{
 main{
     display: block;
     text-align: center;
-    padding: 30px;
     margin-top: 25px;
-    background-image: linear-gradient(to right,rgb(0, 14, 8), rgba(49, 0, 245, 0.555));
 }
 
 /* menu horizontal */
@@ -64,15 +65,16 @@ nav#horizontal li{
 nav#horizontal a{
     display: block;
     color: white;
-    background-color: rgba(0, 0, 255, 0.555);
+    background-color: rgba(255, 0, 0, 0.267);
     text-align: center;
-    height: 45px;
+    height: 30px;
     overflow: hidden;
+    font-size: 1em;
+
    
 }
-nav#horizontal a:hover{
-    
-    background-color: violet;
-
-
+nav#horizontal a:hover,
+nav#horizontal a:focus{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: brown;
 }
