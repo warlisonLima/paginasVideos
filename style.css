@@ -1,13 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0;padding: 0;}
+
 body{
     color: white;
     display: block;
     background-image: linear-gradient(to right,rgb(150,147,225), rgb(150,54,71));
     text-align: justify;
-    
     
     
 }
@@ -19,7 +16,9 @@ body#index{
 h1{
     text-align: center;
     text-shadow: 5px 3px 3px black;
-
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 p#voltar{
@@ -29,41 +28,51 @@ p#voltar{
 main{
     display: block;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
     padding-top: 10px;
 }
 
 /* menu horizontal */
 nav#horizontal{
-    position: relative;
-    float: left;
+    position: absolute;
+    float: center;
     width: 100%;
-    padding-top:7px ;
-    font-family: monospace;  
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-nav#horizontal ul li{
-    background-color: rgba(0, 0, 0);
-    display: block;
-    float: left;
-    width: 20%;
-    list-style-type: none;
+
+nav#horizontal ul{
+    width: 100%;
+    padding-left: 0;
     list-style: none;
-    transition-duration: 1s;
-    position: relative;
-    height: 25px;
+    
     
 }
+
+nav#horizontal ul li{
+    background-color: rgba(0, 0, 0,0.8);
+    display: block;
+    float: left;
+    width: 19.8%;
+    list-style-type: none;
+    transition-duration: 0.5s;
+    position: relative;
+    height: 30px;
+    margin-right: 0.20%;
+}
+nav#horizontal li a{
+    color: white;
+    font-size: 0.75rem;
+}
+
+
 nav#horizontal ul li:hover,
 nav#horizontal ul li:focus-within{
     display: block;
     cursor:pointer;
-    background-color: blue;
-    
 }
 nav#horizontal a:hover{
     color: rgb(255, 0, 0);
-    
-    
 }
 
 nav#horizontal li ul{
@@ -72,18 +81,20 @@ nav#horizontal li ul{
     min-width: 13rem;
     position:absolute;
     transition: all 0.5s ease;
-    margin-top: 0.65rem;
-    left: 35%;
+    left: 40%;
     display: none;
     box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.5);
+    margin-top: 11px;
+   
+    
 }
 nav#horizontal li ul li{
+    margin: 1.5px;
+    padding: 0;
     clear: both;
-    width: 100%;
+    width: 100%; 
     position: relative;
-    background-color: rgb(225, 0, 255);
-    
-    
+    background-color: rgba(255, 0, 255, 1);
 }
 /* contrla a exibição do dropdwn*/
 nav#horizontal ul li:hover>ul,
@@ -93,6 +104,8 @@ nav#horizontal ul li:focus{
     visibility: visible;
     opacity: 1;
     display: block;
+    background-color: rgb(138, 43, 226);
+    
 }
 
 
@@ -101,6 +114,5 @@ nav#horizontal ul li:focus{
 a{
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
     
 }
