@@ -9,6 +9,7 @@ body{
     text-align: justify;
     
     
+    
 }
 body#index{
     display: block;
@@ -18,7 +19,7 @@ body#index{
 h1{
     text-align: center;
     text-shadow: 5px 3px 3px black;
-    
+
 }
 
 p#voltar{
@@ -28,7 +29,7 @@ p#voltar{
 main{
     display: block;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 30px;
     padding-top: 10px;
 }
 
@@ -38,49 +39,41 @@ nav#horizontal{
     float: left;
     width: 100%;
     padding-top:7px ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;  
 }
-
-nav#horizontal ul{
-    width: 100%;
-    padding-left: 0;
-    list-style: none;
-}
-
-nav#horizontal li{
+nav#horizontal ul li{
     background-color: rgba(0, 0, 0);
     display: block;
     float: left;
     width: 20%;
     list-style-type: none;
+    list-style: none;
     transition-duration: 1s;
     position: relative;
     height: 25px;
-    border-top-right-radius: 30%;
-    border-bottom-left-radius: 30%;   
-}
-nav#horizontal li a{
-    color: white;
-    font-size: 0.8rem; 
+    
 }
 nav#horizontal ul li:hover,
 nav#horizontal ul li:focus-within{
     display: block;
     cursor:pointer;
     background-color: blue;
+    
 }
 nav#horizontal a:hover{
     color: rgb(255, 0, 0);
+    
+    
 }
 
 nav#horizontal li ul{
     visibility: hidden;
     opacity: 0;
-    min-width: 10rem;
+    min-width: 13rem;
     position:absolute;
     transition: all 0.5s ease;
     margin-top: 0.65rem;
-    left: 25%;
+    left: 35%;
     display: none;
     box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.5);
 }
@@ -108,5 +101,6 @@ nav#horizontal ul li:focus{
 a{
     text-align: center;
     text-decoration: none;
+    font-size: 1rem;
     
 }
